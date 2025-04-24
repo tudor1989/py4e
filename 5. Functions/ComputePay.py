@@ -1,5 +1,11 @@
 # rewrite your pay computation with time-and-a-half for overtime and create a function called computepay which takes two parameters(hours and rate)
 
+# prompt the user for hours and rate variables
+
+hours = int(input("Enter number of hours worked: "))
+rate = int(input("Enter rate per hour: "))
+
+
 def ComputePay(hours, rate):
   """Function to calculate regular pay and overtime bonus"""
   pay_regular = 40 * float(rate)
@@ -16,3 +22,8 @@ def ComputePay(hours, rate):
 
   else:
     return f"Regular pay {pay_regular}"
+
+
+# call function
+
+ComputePay(hours, rate)
